@@ -1,10 +1,17 @@
 body {
     background-image: url(hacked5.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%; /* Ensure the background covers the entire viewport */
+    background-size: cover;
     background-position: center;
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw; /* Ensure the body takes the full width of the viewport */
+    width: 100vw;
+}
+
+/* Adjust background size for portrait mode */
+@media (orientation: portrait) {
+    body {
+        background-size: auto 100%;
+    }
 }
